@@ -22,6 +22,32 @@ public class UnitTests {
         Treasure gh = new Treasure("Golden Hockeystick");
         System.out.println(gh.title().equals("Golden Hockeystick"));
         System.out.println();
+        gh.hashCode();
+
+        // TEST THE PLAYER
+        System.out.print("\nPlayer should have 100 health: ");
+        System.out.println(Player.health() == 100);
+        System.out.println();       
+
+        // PICK UP A TREASURE
+        Player.pickupTreasure(gh);
+        System.out.print("\nPlayer should have 1 item: ");
+        System.out.println(Player.satchelSize() == 1);
+        System.out.println();    
+
+        // ACTIVATE TREASURE
+        System.out.print("\nPlayer should have no active item: ");
+        System.out.println(Player.activeTreasures().size() == 0);
+        Player.satchel().get(0).activate();
+        System.out.print("\nPlayer should have 1 active item: ");
+        System.out.println(Player.activeTreasures().size() == 1);
+        System.out.println(); 
+        
+        // FILL A TREASURE CHEST
+
+        // OPEN A TREASURE CHEST
+
+        // DRAW A RANDOM OBJECT FROM A CHEST
 
     }
 }

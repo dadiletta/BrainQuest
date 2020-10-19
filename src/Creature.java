@@ -4,7 +4,7 @@
 public class Creature {
     // INSTANCE VARIABLES aka "this"
     private String name;
-    private int health = 100;
+    private int health;
     private Treasure booty; 
 
     // CONSTRUCTORS
@@ -12,6 +12,7 @@ public class Creature {
     public Creature(String name){
         System.out.println(name + " is born!");
         this.name = name;
+        health = 100;
     }
 
     public Creature(String name, int health){
@@ -46,6 +47,17 @@ public class Creature {
 
     public void name(String name){
         this.name = name;
+    }
+
+    public void health(int health){
+        this.health = health;
+    }
+
+    // UTILITIES
+
+    /** Does the creature have greater than 0 health? */
+    public boolean alive(){
+        return this.health > 0;
     }
 
     @Override
