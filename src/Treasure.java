@@ -31,6 +31,7 @@ public class Treasure {
     public boolean active(){
         return this.active;
     }
+
   
     /********************/
     /***** MUTATORS *****/

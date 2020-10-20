@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class UnitTests {
     public static void main(String[] args){
@@ -44,10 +45,26 @@ public class UnitTests {
         System.out.println(); 
         
         // FILL A TREASURE CHEST
+        System.out.print("\nTreasure chest should have no items: ");
+        TreasureChest chesty = new TreasureChest();
+        System.out.println(chesty.size() == 0);
+        ArrayList<Treasure> sack = new ArrayList<>(); // sack full of treasures!
+        sack.add(gh);
+        sack.add(new Treasure("Pickle Rick"));
+        sack.add(new Treasure("Sword of Galantry", 3000));
+        chesty.addTreasure(sack);
+        System.out.print("\nTreasure chest should have no items: ");
+        System.out.println(chesty.size() == 3);
 
         // OPEN A TREASURE CHEST
+        System.out.print("\nTreasure chest should be locked: ");
+        System.out.println(chesty.isLocked() == true);
+        System.out.print("\nTreasure chest's open should return true/false: ");
+        System.out.println(chesty.open());
 
         // DRAW A RANDOM OBJECT FROM A CHEST
-
+        TreasureChest hacked = new TreasureChest(false);
+        System.out.print("\nTreasure Chest yields a treasure: ");
+        System.out.println(hacked.randomTreasure() != null);
     }
 }
