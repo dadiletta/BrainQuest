@@ -2,10 +2,14 @@ import java.util.ArrayList;
 
 public class TreasureChest {
     // INSTANCE VARIABLES
-    private boolean locked = true;
+    private boolean locked;
     private ArrayList<Treasure> treasures = new ArrayList<>();
 
     // CONSTRUCTOR
+
+    public TreasureChest(){
+        locked = true;
+    }
 
     /** Hacked chest, already open. Ready to take stuff out for testing 
      * purposes
