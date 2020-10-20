@@ -53,7 +53,7 @@ public class UnitTests {
         sack.add(new Treasure("Pickle Rick"));
         sack.add(new Treasure("Sword of Galantry", 3000));
         chesty.addTreasure(sack);
-        System.out.print("\nTreasure chest should have no items: ");
+        System.out.print("\nTreasure chest should have 3 items: ");
         System.out.println(chesty.size() == 3);
 
         // OPEN A TREASURE CHEST
@@ -66,5 +66,12 @@ public class UnitTests {
         TreasureChest hacked = new TreasureChest(false);
         System.out.print("\nTreasure Chest yields a treasure: ");
         System.out.println(hacked.randomTreasure() != null);
+
+        // CREATE A DRAGON
+        Dragon smaug = new Dragon("Smaug the Terrible");
+        System.out.print("\nDragon should be alive: ");
+        System.out.println(smaug.alive());
+
+
     }
 }

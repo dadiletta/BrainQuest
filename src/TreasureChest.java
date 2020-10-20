@@ -71,7 +71,7 @@ public class TreasureChest {
         if(this.treasures.size() == 0) return null;
         
         // STUDENTS MUST COMPLETE
-        
+        return null;
 
     }
 
