@@ -1,3 +1,5 @@
+package app; 
+
 public class Treasure {
     private int value;
     private String title;

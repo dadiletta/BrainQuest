@@ -1,3 +1,5 @@
+package app.creatures;
+
 public class Dragon extends Creature{
     
     public Dragon(){

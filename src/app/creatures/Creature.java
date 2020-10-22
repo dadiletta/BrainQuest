@@ -1,7 +1,11 @@
+package app.creatures;
+
+import app.Treasure;
+
 /**
  * A basic building block for an opponent
  */
-public class Creature {
+public abstract class Creature {
     // INSTANCE VARIABLES aka "this"
     private String name;
     private int health;

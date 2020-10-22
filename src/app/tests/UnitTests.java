@@ -1,11 +1,17 @@
+package app.tests;
+
+// library imports
 import java.util.ArrayList;
+// local imports
+import app.*;
+import app.creatures.*;
 
 public class UnitTests {
     public static void main(String[] args){
 
         // CREATE A CREATURE
         System.out.print("\nShould announce a creature: ");
-        Creature a = new Creature("Hockey Player");
+        Creature a = new Villager("Hockey Player");
         System.out.println();
 
         // CHECK CREATURE'S HEALTH
