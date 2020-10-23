@@ -59,6 +59,8 @@ public abstract class Creature {
 
     // UTILITIES
 
+    public abstract void attack();
+
     /** Does the creature have greater than 0 health? */
     public boolean alive(){
         return this.health > 0;
